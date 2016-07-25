@@ -15,9 +15,8 @@ var Note = React.createClass({
     },
     render: function() {
         return (
-            <div className="note">
+            <div className="insert-form">
                 <h3>Create an album</h3>
-                <form>
                 <div>
                     <label>Tittle</label>
                     <input type="text" id="title_input"/>
@@ -31,7 +30,6 @@ var Note = React.createClass({
                     <input type="text"/>
                 </div>
                 <button type="submit" className="btn btn-primary" onClick={this.edit}>Submit</button>
-                </form>
             </div>
             );
     }
